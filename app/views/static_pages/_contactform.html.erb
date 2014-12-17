@@ -49,17 +49,22 @@
         </form>
       </div>
       <div class="social-media-info">
-        <p><a href="mailto:info@royalcremas.com">Info@RoyalCremas.com</a>
-        </p>
+        <p><%=mail_to("info@royalcremas.com", "Info@RoyalCremas.com")%></p>
         <ul class="list-inline banner-social-buttons">
           <li>
-            <a href="https://twitter.com/royalcremas" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+            <%= link_to("https://twitter.com/royalcremas", class: "btn btn-default btn-lg") do %>
+              <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
+            <% end %>
           </li>
           <li>
-            <a href="https://instagram.com/royalcremas" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+            <%= link_to("https://instagram.com/royalcremas", class: "btn btn-default btn-lg") do %>
+              <i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+            <% end %>
           </li>
           <li>
-            <a href="https://www.facebook.com/royalcremas" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+            <%= link_to("https://www.facebook.com/royalcremas", class: "btn btn-default btn-lg") do %>
+              <i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+            <% end %>
           </li>
         </ul>
       </div>
