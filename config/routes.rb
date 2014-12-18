@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'static_pages#index'
+  root "home#index"
+  resource :contact_requests, only: [:create], format: false
 end
