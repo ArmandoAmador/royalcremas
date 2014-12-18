@@ -12,7 +12,7 @@ $(function(){
   });
 
   form.on('ajax:success', function(e, response){
-    form.after('<h1 class="coffee">We got the message. We\'ll get back to you soon!</h1>');
+    form.after('<h1 class="coffee">Thank you for contacting Royal Cremas!</h1>');
     form.hide();
   });
 
