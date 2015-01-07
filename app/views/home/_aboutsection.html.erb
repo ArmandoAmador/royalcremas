@@ -6,10 +6,11 @@
 
       <p>We offer: 750ml (Regular), 147ml (Personal) &amp; 50ml (Mini/Favor by the dozen) bottles.</p>
 
-      <p><%=link_to("Order", "#") %> one and try it out today!</p>
+      <p><%=link_to("Order", "#order", class: "page-scroll") %> one and try it out today!</p>
     </div>
     <div class="col-sm-12 col-md-3">
-      <%= image_tag('https://placehold.it/350x400') %>
+      <%= image_tag('bottles.jpg', class: "img-responsive hidden-xs hidden-sm") %>
+      <%= image_tag('bottles_mobile.jpg', class: "img-responsive visible-xs-12 visible-sm-12 hidden-md hidden-lg") %>
     </div>
   </div>
 </section>
