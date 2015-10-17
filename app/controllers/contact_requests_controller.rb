@@ -17,6 +17,7 @@ class ContactRequestsController < ApplicationController
     params.require(:contact_request).permit(
       :name,
       :email,
+      :phone,
       :subject,
       :message
     )

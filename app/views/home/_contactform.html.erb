@@ -20,8 +20,13 @@
                   <span class="input-group-addon">
                       <span class="glyphicon glyphicon-envelope"></span>
                   </span>
-                  <%= f.text_field :email, class: "form-control", placeholder: "Enter email" %>
+                  <%= f.email_field :email, class: "form-control", placeholder: "Enter email" %>
                 </div>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :phone, "Phone" %>
+                <%= f.phone_field :phone, class: "form-control", placeholder: "Enter Phone" %>
               </div>
 
               <div class="form-group">
@@ -32,7 +37,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <%= f.label :message, "What can we help you with?" %>
-                <%= f.text_area :message, class: "form-control", placeholder: "Enter a message", rows: 9, cols: 25  %>
+                <%= f.text_area :message, class: "form-control", placeholder: "Enter a message", rows: 12 %>
               </div>
             </div>
             <div class="col-md-12">

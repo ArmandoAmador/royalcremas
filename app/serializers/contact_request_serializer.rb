@@ -1,3 +1,3 @@
 class ContactRequestSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :message, :subject
+  attributes :id, :name, :phone, :email, :message, :subject
 end
