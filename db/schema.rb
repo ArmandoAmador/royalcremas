@@ -26,10 +26,4 @@ ActiveRecord::Schema.define(version: 20151017014622) do
     t.string   "phone"
   end
 
-  create_table "contacts", force: true do |t|
-    t.string "name"
-    t.string "email"
-    t.text   "message"
-  end
-
 end
